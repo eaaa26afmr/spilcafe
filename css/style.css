@@ -39,6 +39,12 @@ body {
   background-color: #dfd8d2;
 }
 
+
+.all {
+  font-size: 25px;
+  font-weight: 700;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
