@@ -79,6 +79,7 @@ body {
 .modal-content img {
   width: 40%;
   border-radius: 20px;
+  
 }
 
 .hidden {
@@ -89,7 +90,7 @@ body {
   background: white;
   margin: 50px auto;
   padding: 20px;
-  width: 80%;
+  width: 55%;
   border-radius: 20px;
 }
 
