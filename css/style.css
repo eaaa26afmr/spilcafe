@@ -66,6 +66,11 @@ body {
 }
 
 .modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -76,22 +81,34 @@ body {
   overflow-y: auto;
 }
 
+#modal-body {
+  text-align: center;
+}
+
 .modal-content img {
-  width: 40%;
+  width: 55%;
   border-radius: 20px;
-  
+  height: auto;
 }
 
 .hidden {
   display: none;
 }
+#close {
+  top: 10px;
+  justify-content: flex-start;
 
+  font-size: 24px;
+  cursor: pointer;
+}
 .modal-content {
   background: white;
-  margin: 50px auto;
+  margin: 10px auto;
   padding: 20px;
-  width: 55%;
+  width: 40%;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 #filter {
