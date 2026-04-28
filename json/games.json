@@ -1,0 +1,43 @@
+[
+
+  {
+    "id": 1,
+    "name": "Partners",
+    "players": "4",
+    "time": "30-60",
+    "category": "Sekskabsspil",
+    "difficulty": "Let",
+    "image": "https://image.bog-ide.dk/1903758-120747-1000-999/webp/0/828/1903758-120747-1000-999.webp",
+    "description": "Beskrivelse:"
+  },
+  {
+    "id": 2,
+    "name": "Catan",
+    "players": "3-4",
+    "time": "60-120",
+    "category": "Stategi",
+    "difficulty": "Medium",
+    "image": "https://image.bog-ide.dk/2738735-1496170-839-851/webp/0/1000/2738735-1496170-839-851.webp",
+    "description": "Beskrivelse: Byg veje og bosættelser og handel dig til sejr."
+  },
+  {
+    "id": 3,
+    "name": "Hint",
+    "players": "4-10",
+    "time": "45-60",
+    "category": "Selskabsspil",
+    "difficulty": "Let",
+    "image": "https://www.papskubber.dk/images/3545.jpg",
+    "description": "Beskrivelse: Klassisk kortspil hvor du skal af med dine kort."
+  },
+  {
+    "id": 4,
+    "name": "The Sims",
+    "players": "2-5",
+    "time": "40-60",
+    "category": "Familiespil",
+    "difficulty": "Let",
+    "image": "https://popstop.co.nz/cdn/shop/files/the-sims-board-game-127933029bbjpg.jpg?crop=center&height=600&v=1755240662&width=600",
+    "description": "Beskrivelse: Byg og udvikl din egen version af The Sims."
+  }
+]
