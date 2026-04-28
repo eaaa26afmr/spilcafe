@@ -9,7 +9,6 @@ body {
     align-items: center;
     position: relative;
     padding: 20px;
-
 }
 
 .logo {
@@ -19,7 +18,6 @@ body {
     transform: translateX(-50%);
     top: 20px;
     width: 350px;
-
 }
 
 .lines {
@@ -27,6 +25,7 @@ body {
   height: 70px; 
   margin-left: 10px; 
 }
+
 .back-btn {
   order: 1;
   font-weight: 300;
@@ -40,10 +39,12 @@ body {
   background-color: #dfd8d2;
 }
 
+
 .all {
   font-size: 25px;
   font-weight: 700;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

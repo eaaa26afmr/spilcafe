@@ -29,7 +29,7 @@ function displayGames(games) {
   });
 }
 
-// 🔹 Filtrering
+//Filtrering
 document.getElementById("filter").addEventListener("change", (e) => {
   const value = e.target.value;
 
@@ -41,7 +41,7 @@ document.getElementById("filter").addEventListener("change", (e) => {
   }
 });
 
-// 🔹 Modal
+//Modal
 function openModal(game) {
   const modal = document.getElementById("modal");
   const body = document.getElementById("modal-body");
@@ -58,7 +58,7 @@ function openModal(game) {
   modal.classList.remove("hidden");
 }
 
-// luk modal
+//Luk modal
 document.getElementById("close").addEventListener("click", () => {
   document.getElementById("modal").classList.add("hidden");
 });
