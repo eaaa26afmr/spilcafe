@@ -1,7 +1,7 @@
 body {
   font-family: Arial;
   padding: 20px;
-  background-image: url(../img/Background.png);
+  
 }
 .header {
     display: flex;
@@ -9,15 +9,18 @@ body {
     align-items: center;
     position: relative;
     padding: 20px;
+    background-image: url(../img/Background.png);
 }
 
+
 .logo {
-  order: 2;
+  order: 1;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 20px;
     width: 350px;
+    
 }
 
 .lines {
@@ -26,18 +29,7 @@ body {
   margin-left: 10px; 
 }
 
-.back-btn {
-  order: 1;
-  font-weight: 300;
-  right: 20px;
-  margin-bottom: 20px;
-  padding: 10px;
-  width: 6%;
-  font-size: 16px;
-  border: 2px solid #C81616;
-  border-radius: 20px;
-  background-color: #dfd8d2;
-}
+
 
 
 .all {
@@ -123,10 +115,10 @@ body {
 
 
 .controls {
-  background: #dfd8d2;
-  border: 1px solid #dfd8d2;
+  background: #dbccc4;
+  border: 1px solid #d0c9c4;
   border-radius: 12px;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(10px);
   padding: 1rem;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -138,6 +130,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  display: flex;
 }
 
 .control-group label {
@@ -148,9 +141,9 @@ body {
 
 .control-group input,
 .control-group select {
-  width: 100%;
-  background: #dfd8d2;
-  border: 1px solid #dfd8d2;
+  width: 85%;
+  background: #e9e0d9;
+  border: 1px solid #f0edeb;
   color: var(--text-light);
   border-radius: 8px;
   padding: 0.7rem 0.8rem;
@@ -161,6 +154,6 @@ body {
 
 .control-group input:focus,
 .control-group select:focus {
-  outline-color: #dfd8d2;
+  outline-color: #ffffff;
   border-color: var(--accent);
 }
