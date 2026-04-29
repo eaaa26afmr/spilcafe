@@ -2,76 +2,68 @@
 <html lang="da">
 <head>
   <meta charset="UTF-8">
-  <title>Spilcafé</title>
+  <title>Spiloversigt</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <header class="header">
-<img src="img/logo.png" alt="Logo" class="logo">
-<img src="img/menu.png" alt="" class="lines">
-  </header>
-
-<section>
-  <h1>SPILOVERSIGT</h1>
-<p>Udforsk vores samling af spil</p>
-</section>
-
-
-<div class="text">
-<P class="all">Alle spil</P>
-</div>
-
-  <main>
-
-
-    <section class="controls">
-  <div class="control-group">
-    <label for="search-input">Søg på titel</label>
-    <input
-      type="text"
-      id="search-input"
-      placeholder="Fx Partners, Hint og UNO"
-    />
+<header class="hero">
+  <div class="overlay">
+    <img src="img/logo.png" alt="Spilcafeen logo" class="logo">
+    
+    <h1>SPILOVERSIGT</h1>
   </div>
-  <div class="control-group">
-    <label for="genre-select">Genre</label>
-    <select id="genre-select">
-      <option value="all">Alle genrer</option>
-      <option value="all">Familiespil</option>
-      <option value="all">Quizspil</option>
-      <option value="all">Kortspil</option>
-    </select>
-    <span id="spil-count" class="spil-count"></span>
-  </div>
+</header>
 
-  <div class="control-group">
-  <label for="sort-select">Sortering</label>
-  <select id="sort-select">
-    <option value="none">Ingen sortering</option>
-    <option value="title">Titel (A-Å)</option>
-    <option value="year">Årstal (nyeste først)</option>
-    <option value="rating">Rating (højeste først)</option>
-  </select>
-</div>
+<main>
 
-</section>
+  <!-- FILTER-KONTROLLER -->
+  <section class="controls">
 
+    <div class="control-group">
+      <label for="search">Søg på titel</label>
+      <input
+        type="text"
+        id="search"
+        placeholder="Fx Partners, Hint og UNO"
+      />
+    </div>
 
+    <div class="control-group">
+      <label for="genre">Genre</label>
+      <select id="genre">
+        <option value="all">Alle genrer</option>
+        <option value="Selskabsspil">Selskabsspil</option>
+        <option value="Strategi">Strategi</option>
+        <option value="Strategi/Logik">Strategi/Logik</option>
+        <option value="Strategi/Abstrakt">Strategi/Abstrakt</option>
+        <option value="Familie">Familie</option>
+        <option value="Festspil">Festspil</option>
+        <option value="Abstrakt">Abstrakt</option>
+        <option value="Puslespil">Puslespil</option>
+        <option value="Aktion">Aktion</option>
+        <option value="Kortspil/Familie">Kortspil/Familie</option>
+      </select>
+    </div>
 
-<section id="movie-list" class="movie-grid" aria-label="Filmliste">
-  <!-- Film vises her med JavaScript -->
-</section>
+    <div class="control-group">
+      <label for="sort">Sortering</label>
+      <select id="sort">
+        <option value="none">Ingen sortering</option>
+        <option value="title">Titel (A-Å)</option>
+        <option value="time">Tid (kortest først)</option>
+      </select>
+    </div>
 
-  </main>
+  </section>
 
+  <!-- SPILLISTE -->
+  <section id="game-list" class="grid"></section>
 
+</main>
 
-
-
-<div id="games" class="grid"></div>
-
-<!-- Modal = vinduet der popper op når man trykker på det-->
+<!-- MODAL -->
 <div id="modal" class="modal hidden">
   <div class="modal-content">
     <span id="close">&times;</span>
@@ -82,3 +74,5 @@
 <script src="js/style.js"></script>
 </body>
 </html>
+
+
