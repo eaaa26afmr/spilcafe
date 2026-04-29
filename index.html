@@ -21,19 +21,57 @@
 <p>Udforsk vores samling af spil</p>
 </section>
 
-<select id="filter">
-  <option value="filtrer">Filtrer</option>
-  <option value="genre">Genre</option>
-  <option value="spillere">Antal spillere</option>
-  <option value="spilletid">Spilletid</option>
-  <option value="sværhedsgrad">Sværhedsgrad</option>
-  <option value="alder">Alder</option>
-</select>
 
 <div class="text">
   <p class="found">18 spil fundet</p>
 <P class="all">Alle spil</P>
 </div>
+
+  <main>
+<section class="status-bar">
+  <p id="movie-count">Viser 0 spil</p>
+</section>
+
+    <section class="controls">
+  <div class="control-group">
+    <label for="search-input">Søg på titel</label>
+    <input
+      type="text"
+      id="search-input"
+      placeholder="Fx Partners, Hint og UNO"
+    />
+  </div>
+  <div class="control-group">
+    <label for="genre-select">Genre</label>
+    <select id="genre-select">
+      <option value="all">Alle genrer</option>
+    </select>
+    <span id="spil-count" class="spil-count"></span>
+  </div>
+
+  <div class="control-group">
+  <label for="sort-select">Sortering</label>
+  <select id="sort-select">
+    <option value="none">Ingen sortering</option>
+    <option value="title">Titel (A-Å)</option>
+    <option value="year">Årstal (nyeste først)</option>
+    <option value="rating">Rating (højeste først)</option>
+  </select>
+</div>
+
+</section>
+
+
+
+<section id="movie-list" class="movie-grid" aria-label="Filmliste">
+  <!-- Film vises her med JavaScript -->
+</section>
+
+  </main>
+
+
+
+
 
 <div id="games" class="grid"></div>
 

@@ -29,17 +29,7 @@ function displayGames(games) {
   });
 }
 
-//Filtrering
-document.getElementById("filter").addEventListener("change", (e) => {
-  const value = e.target.value;
 
-  if (value === "all") {
-    displayGames(allGames);
-  } else {
-    const filtered = allGames.filter(game => game.category === value);
-    displayGames(filtered);
-  }
-});
 
 //Modal
 function openModal(game) {

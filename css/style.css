@@ -111,12 +111,56 @@ body {
   flex-direction: column;
 }
 
-#filter {
-  margin-bottom: 20px;
-  padding: 10px;
-  width: 6%;
-  font-size: 16px;
-  border: 2px solid #C81616;
-  border-radius: 20px;
-  background-color: #dfd8d2;
+
+
+
+
+.genre {
+  font-size: 0.8rem;
+  color: #d5e5f1;
+  margin-top: 0.3rem;
+}
+
+
+.controls {
+  background: #dfd8d2;
+  border: 1px solid #dfd8d2;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.control-group label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.control-group input,
+.control-group select {
+  width: 100%;
+  background: #dfd8d2;
+  border: 1px solid #dfd8d2;
+  color: var(--text-light);
+  border-radius: 8px;
+  padding: 0.7rem 0.8rem;
+  font-size: 0.95rem;
+  outline: 2px solid transparent;
+  transition: outline-color 160ms ease;
+}
+
+.control-group input:focus,
+.control-group select:focus {
+  outline-color: #dfd8d2;
+  border-color: var(--accent);
 }
