@@ -100,3 +100,6 @@ document.getElementById("sort").addEventListener("change", filterAndSortGames);
 // Start
 fetchGames();
 
+
+
+
